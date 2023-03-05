@@ -1,0 +1,149 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("resources/road5.jpeg");
+  color: #fff;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "Crossroads";
+  src: url("CROSSROADS PERSONAL USE.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("Impact\ Label\ Reversed.ttf") format(truetype);
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+#title {
+  font-family: "Crossroads";
+  border-radius: 10px;
+  font-size: 5rem;
+  height: 20px;
+  top: 50%;
+  margin-top: 10%;
+}
+
+#input_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding-top: 0rem;
+  height: 5vh;
+}
+
+#input {
+  width: 20vw;
+  height: 5vh;
+  background-color: gray;
+  text-align: center;
+  font-size: larger;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 1; /* Firefox */
+}
+
+#submeter {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#subButon {
+  width: 11%;
+}
+
+#contexto {
+  font-family: "Crossroads";
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -20%);
+  margin: 0 auto;
+}
+
+#overlay {
+  background: #000;
+  opacity: 1;
+  filter: alpha(opacity=80);
+  overflow: hidden;
+}
+
+#loading {
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  top: 10%;
+  left: 29%;
+  margin: auto;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+#result {
+  background-color: #000;
+  font-size: 71%;
+  font-family: "Impact";
+  position: fixed;
+  left: 50%;
+  bottom: 140px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  #title {
+    font-size: 4rem;
+    margin-top: 25%;
+  }
+  #input_div {
+    width: 90%;
+    font-size: 3px;
+  }
+  #input {
+    font-size: 15px;
+    width: 70%;
+  }
+  #contexto {
+    font-size: 12px;
+    text-align: center;
+  }
+  #submeter {
+    align-self: center;
+  }
+  #subButon {
+    width: 22%;
+  }
+  #loading {
+    width: 55%;
+    height: 30%;
+    top: 30%;
+    left: 23%;
+  }
+  #result {
+    font-size: 12px;
+    text-align: center;
+  }
+}
