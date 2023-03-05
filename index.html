@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saiba quanto tempo de vida perde no trânsito">
+    <title>Traffic Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title">Road Life</h1>
+    </div>
+    <div id="input_div">
+        <input id="input" onkeyup="success()" onchange="success()" type="number" placeholder="minutos no trânsito">
+    </div>
+    <div id="submeter">
+        <button id="subButon" disabled>submeter</button>
+    </div>
+    <div id="result">
+        <h1 id="resultText"></h1>
+    </div>
+    <div id="contexto">
+        <h1>saiba quanto tempo de vida perde no trânsito</h1>
+    </div>
+    <script>
+        function calculate() {
+            var number = document.getElementById("input").value;
+
+            var minutosAno = (number * 242);
+            var horasAno = (minutosAno / 60);
+            var diasAno = Math.round(horasAno / 24);
+
+            document.getElementById("resultText").innerHTML = "neste momento está a perder " + diasAno + " dias de vida por ano..."
+            /* setTimeout(function () {
+                location.reload();
+            }, 6000) */
+        }
+    </script>
+</body>
+
+</html>
